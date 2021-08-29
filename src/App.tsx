@@ -1,6 +1,7 @@
 import React from 'react';
 import greeter from 'greeter';
 import styled from '@emotion/styled';
+import { Heading } from 'components/Heading';
 interface AppProps extends React.ComponentProps<'div'> {
   userName: string;
   children: React.ReactNode;
@@ -18,6 +19,7 @@ function App({ userName, children, ...rest }: AppProps) {
       <StyledButton>hello, I am from emotion</StyledButton>
       {greeter(userName)}
       {children}
+      <Heading level="2">hello</Heading>
     </div>
   );
 }

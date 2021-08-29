@@ -9,7 +9,7 @@ render(
   <App
     className={styles.redTitle}
     userName={'Hello'}
-    style={{ margin: 20, border: '1px solid black', display: 'flex' }}
+    style={{ margin: 20, border: '1px solid black' }}
   >
     <div className="green-title">Green</div>
     <div className={classnames(styles.redTitle, styles.bigFont)}>Red</div>
