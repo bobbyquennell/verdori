@@ -2,6 +2,7 @@ import React from 'react';
 import greeter from 'greeter';
 import styled from '@emotion/styled';
 import { Heading } from 'components/Heading';
+import { vanillaStyle } from 'vanillarExtract.css';
 interface AppProps extends React.ComponentProps<'div'> {
   userName: string;
   children: React.ReactNode;
@@ -20,6 +21,7 @@ function App({ userName, children, ...rest }: AppProps) {
       {greeter(userName)}
       {children}
       <Heading level="2">hello</Heading>
+      <h1 className={vanillaStyle}>Hello World</h1>
     </div>
   );
 }
